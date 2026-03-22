@@ -166,7 +166,10 @@ section{
 footer{
     background:#020617;
     padding:15px;
+    position:fixed;
     text-align:center;
+    bottom:0;
+    width:100%;
 }
 
 }
