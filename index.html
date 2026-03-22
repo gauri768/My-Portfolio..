@@ -160,8 +160,22 @@
         <inpute type="Submit" value="Submit">
     </p>
 </form></div>
-    </section>   
+    </section>
+     <script>
+       const sections=
+         document.querySelectorAll("section"); 
+       
+         window.addEventListener("scroll",() => {
+          sections.forEach(sec => { 
+             const top= sec.getBoundingClientRect().top;
+            const trigger= window.innerHeight/1.3;
 
+            if(top < trigger){
+              sec.classList.add("show");
+            }
+          });
+         });
+     </script>
 <footer>
     © 2026 Gauri Bhoyar
 </footer>
