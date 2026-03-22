@@ -139,6 +139,15 @@ section{
     display:grid;
     transform: scale(1.05);
 }
+    section{
+        opacity:0;
+        transform:translateY(50px);
+        transition:all 0.8s ease; 
+         }
+    section.show{
+        opacity: 1;
+        transform:translateY(0);
+    }
 .modules{
     background-color: #38bdf8;
     height: 450px;
